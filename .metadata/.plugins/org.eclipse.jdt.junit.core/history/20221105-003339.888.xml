@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Loginrunner" project="Cucumber2_0" tests="18" started="18" failures="2" errors="0" ignored="10">
+  <testsuite name="runners.Loginrunner" time="1.531">
+    <testsuite name="Feature: Techfios billing login validation" time="1.531">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="1.514" incomplete="true">
+        <failure>
+          <expected>Add New Account</expected>
+          <actual/>org.junit.ComparisonFailure: Page not Found expected:&lt;[Add New Account]&gt; but was:&lt;[]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at Pages.LoginPage.getnewAccountPage(LoginPage.java:57)&#13;
+	at steps.LogininStepDefination.user_should_land_on_the_Add_New_Account_Page(LogininStepDefination.java:72)&#13;
+	at ✽.Then User should land on the Add New Account Page(src/test/java/features/TechfiosLogin.feature:11)&#13;
+&#13;
+</failure>
+        <testcase name="Given User is on techfios login page" classname="Scenario: User should be able to login with valid credentials" time="0.113"/>
+        <testcase name="When user enter Username as &quot;demo@techfios.com&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.072"/>
+        <testcase name="When User enter Password as &quot;abc123&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.732"/>
+        <testcase name="And click on signin button" classname="Scenario: User should be able to login with valid credentials" time="0.008"/>
+        <testcase name="Then User should land on the Dashboard Page" classname="Scenario: User should be able to login with valid credentials" time="0.257"/>
+        <testcase name="And User clicks on bankCash" classname="Scenario: User should be able to login with valid credentials" time="0.29"/>
+        <testcase name="And User clicks on newAccount" classname="Scenario: User should be able to login with valid credentials" time="0.038"/>
+        <testcase name="Then User should land on the Add New Account Page" classname="Scenario: User should be able to login with valid credentials" time="0.002">
+          <failure>
+            <expected>Add New Account</expected>
+            <actual/>org.junit.ComparisonFailure: Page not Found expected:&lt;[Add New Account]&gt; but was:&lt;[]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at Pages.LoginPage.getnewAccountPage(LoginPage.java:57)&#13;
+	at steps.LogininStepDefination.user_should_land_on_the_Add_New_Account_Page(LogininStepDefination.java:72)&#13;
+	at ✽.Then User should land on the Add New Account Page(src/test/java/features/TechfiosLogin.feature:11)&#13;
+&#13;
+</failure>
+        </testcase>
+        <testcase name="And User should enter accountTitle&quot;J450A&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter description &quot;Saving&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.002" ignored="true"/>
+        <testcase name="And User should enter initialBalance&quot;10,563&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter accountNumber &quot;54875692&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter contactPerson&quot;James Brown&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should  enter Phone&quot;3148975694 &quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter accountTitle&quot;PlatinumPlus&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter internetBankingURL&quot;ChaseBank.com &quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User shoudl clicks on newAccount" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then User should be able to validate account created successfull" classname="Scenario: User should be able to login with valid credentials" time="0.011" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

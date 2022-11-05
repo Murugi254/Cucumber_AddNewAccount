@@ -1,0 +1,130 @@
+package steps;
+
+import org.openqa.selenium.support.PageFactory;
+
+import Pages.LoginPage;
+import Pages.TestBase;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+
+public class LogininStepDefination extends TestBase {
+	LoginPage loginpage;
+	
+	@Before
+	public void setup() {
+		init();
+		loginpage = PageFactory.initElements(driver, LoginPage.class);
+		
+	}
+	
+	@Given ("^User is on techfios login page$")
+	public void user_is_on_techfios_login_page () {
+			driver.get("https://www.techfios.com/billing/?ng=admin/");
+		
+	}
+	
+	@When ("^user enter Username as \"([^\"]*)\"$")
+	public void user_enter_Username (String username) {
+				loginpage.enter_UserName(username);	
+		
+	}
+	
+		@When("^User enter Password as \"([^\"]*)\"$")
+		public void user_enter_Password_as(String password) {
+			loginpage.enter_Password(password);
+		   
+	}
+
+	@When("^click on signin button$")
+	public void click_on_signin_button() {
+		loginpage.signin_Button();
+	
+			
+	}
+	    
+	@Then("^User should land on the Dashboard Page$")
+	public void user_should_land_on_the_Dashboard_Page(){
+		String expectedTitle = "Dashboard- iBilling";
+		String actualTitle = loginpage.getPageTitle();
+		Assert.assertEquals("Page not Found", expectedTitle, actualTitle );
+		  
+	}
+	
+	@Then("^User clicks on bankCash$")
+	public void user_clicks_on_bankCash (){
+		loginpage.clickonbankCash();
+		
+	}
+	
+	@Then("^User clicks on newAccount\"([^\"]*)\"$")
+	public void user_clicks_on_newAccount()  {
+		loginpage.user_clicknewAccount();
+		
+	}
+
+	@Then("^User should land on the Add New Account Page$")
+	public void user_should_land_on_the_Add_New_Account_Page()  {
+		loginpage.getnewAccountPage("Add New Account");
+	}
+
+	@Then("^User should enter accountTitle\"([^\"]*)\"$")
+	public void user_should_enter_accountTitle(String accountTitle)  {
+		loginpage.accountTitle(accountTitle);
+	}
+
+	@Then("^User should enter description \"([^\"]*)\"$")
+	public void user_should_enter_description(String description) {
+		loginpage.enterdescription(description);
+	}
+
+	@Then("^User should enter initialBalance\"([^\"]*)\"$")
+	public void user_should_enter_initialBalance(String initialBalance)  {
+		loginpage.enterinitialBalance(initialBalance);
+	    
+	}
+
+	@Then("^User should enter accountNumber \"([^\"]*)\"$")
+	public void user_should_enter_accountNumber(String accountNumber)  {
+		loginpage.enteraccountNumber(accountNumber);
+	}
+
+	@Then("^User should enter contactPerson\"([^\"]*)\"$")
+	public void user_should_enter_contactPerson(String contactPerson)  {
+		loginpage.entercontactPerson(contactPerson); 
+	}
+
+	@Then("^User should  enter Phone\"([^\"]*)\"$")
+	public void user_should_enter_Phone(String phone)  {
+		loginpage.enterphone(phone);
+	}
+
+	@Then("^User should enter internetBankingURL\"([^\"]*)\"$")
+	public void user_should_enter_internetBankingURL(String bankingURL)  {
+		loginpage.enterinternetBankingURL(bankingURL);
+	}
+
+	@Then("^User shoudl clicks on newAccount$")
+	public void user_shoudl_clicks_on_newAccount() {
+		loginpage.user_should_clicksubmit();
+	    
+	}
+
+	@Then("^User should be able to validate account created successfull$")
+	public void user_should_be_able_to_validate_account_created_successfull()  {
+	    
+	}
+
+
+	
+		
+	/*@After
+	public void tearDown() {
+		driver.close();
+		driver.quit();*/
+	//}
+}

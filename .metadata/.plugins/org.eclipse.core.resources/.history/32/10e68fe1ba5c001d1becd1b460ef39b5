@@ -1,0 +1,21 @@
+Feature: Techfios billing login validation
+
+  Scenario: User should be adble to login with valid credentials
+    Given User is on techfios login page
+    When user enter Username as "demo@techfios.com"
+    When User enter Password as "abc123"
+    And click on signin button
+    Then User should land on the Dashboard Page
+    And User clicks on "bankCash"
+    And User clicks on "newAccount"
+    Then User should land on the Add New Account Page
+    And User should enter "accountTitle" 
+    And User should enter "description" 
+    And User should enter "initialBalance" 
+    And User should enter "accountNumber" 
+    And User should enter "contactPerson" 
+    And User should  enter "Phone" 
+    And User should enter "accountTitle" 
+    And User should enter "internetBankingURL" 
+    And User shoul clicks on "newAccount"
+    Then User should be able to validate account created successfull

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Loginrunner" project="Cucumber2_0" tests="18" started="18" failures="0" errors="2" ignored="11">
+  <testsuite name="runners.Loginrunner" time="1.116">
+    <testsuite name="Feature: Techfios billing login validation" time="1.116">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="1.085" incomplete="true">
+        <error>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'steps.LogininStepDefination.user_clicks_on_newAccount() in file:/C:/Users/warut/practiceCucumber/Cucumber2_0/target/test-classes/' with pattern [^User clicks on newAccount"([^"]*)"$] is declared with 0 parameters. However, the gherkin step has 1 arguments []. 
+Step: And User clicks on newAccount""&#13;
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)&#13;
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on techfios login page" classname="Scenario: User should be able to login with valid credentials" time="0.13"/>
+        <testcase name="When user enter Username as &quot;demo@techfios.com&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.073"/>
+        <testcase name="When User enter Password as &quot;abc123&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.802"/>
+        <testcase name="And click on signin button" classname="Scenario: User should be able to login with valid credentials" time="0.012"/>
+        <testcase name="Then User should land on the Dashboard Page" classname="Scenario: User should be able to login with valid credentials" time="0.06"/>
+        <testcase name="And User clicks on bankCash" classname="Scenario: User should be able to login with valid credentials" time="0.004"/>
+        <testcase name="And User clicks on newAccount&quot;&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.004">
+          <error>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'steps.LogininStepDefination.user_clicks_on_newAccount() in file:/C:/Users/warut/practiceCucumber/Cucumber2_0/target/test-classes/' with pattern [^User clicks on newAccount"([^"]*)"$] is declared with 0 parameters. However, the gherkin step has 1 arguments []. 
+Step: And User clicks on newAccount""&#13;
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)&#13;
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then User should land on the Add New Account Page" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter accountTitle&quot;J450A&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter description &quot;Saving&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter initialBalance&quot;10,563&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter accountNumber &quot;54875692&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.003" ignored="true"/>
+        <testcase name="And User should enter contactPerson&quot;James Brown&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should  enter Phone&quot;3148975694 &quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter accountTitle&quot;PlatinumPlus&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.002" ignored="true"/>
+        <testcase name="And User should enter internetBankingURL&quot;ChaseBank.com &quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User shoudl clicks on newAccount" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="Then User should be able to validate account created successfull" classname="Scenario: User should be able to login with valid credentials" time="0.016" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

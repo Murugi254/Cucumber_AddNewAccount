@@ -1,0 +1,99 @@
+package Pages;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class LoginPage {
+	WebDriver driver;
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	@FindBy(how = How.XPATH, using = "//input[@id='username']")WebElement Username;
+	@FindBy(how = How.XPATH, using = "//input [@id= 'password']")WebElement Password;
+	@FindBy(how = How.XPATH, using = "//button [@name ='login']")WebElement SigninButton;
+	@FindBy(how = How.XPATH, using = "//*[@id=\"side-menu\"]/li[10]/a/span[1]")WebElement ClickbankCash;
+	@FindBy(how = How.XPATH, using = "//a[contains( text(), 'New Account')]")WebElement NewAccount;
+	@FindBy(how = How.XPATH, using = "//*[@id=\"page-wrapper\"]/div[3]/div[1]/div/div/div[1]")WebElement ValidateAdNewAccountpage;
+	@FindBy(how = How.XPATH, using = "//button [@name ='login']")WebElement AddNewAccount;
+	@FindBy(how = How.XPATH, using = "//input[@id= 'account']")WebElement AccountTitle;
+	@FindBy(how = How.XPATH, using = "//input[@id='description']")WebElement Description;
+	@FindBy(how = How.XPATH, using = "//input[@id='balance']")WebElement InitialBalance;
+	@FindBy(how = How.XPATH, using = "//input[@id='account_number']")WebElement AccountNumber;
+	@FindBy(how = How.XPATH, using = "//*[@id=\"page-wrapper\"]/div[3]/div[1]/div/div/div[2]/form/div[5]")WebElement ContactPerson;
+	@FindBy(how = How.XPATH, using = "//input[@id='contact_phone']")WebElement Phone;
+	@FindBy(how = How.XPATH, using = "//input[@id='ib_url']")WebElement BankingURL;
+	@FindBy(how = How.XPATH, using = "//*[@id=\"page-wrapper\"]/div[3]/div[1]/div/div/div[2]/form/button")WebElement ClickonSubmit;
+
+	public void enter_UserName(String username) {
+		Username.sendKeys(username);
+	}
+
+	public void enter_Password(String password) {
+		Password.sendKeys(password);
+	}
+
+	public void signin_Button() {
+		SigninButton.click();
+	}
+
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+
+	public void clickonbankCash() {
+		ClickbankCash.click();
+	}
+
+	public void user_clicknewAccount() {
+		NewAccount.click();
+	}
+
+	public void getnewAccountPage(String expectedText) {
+		Assert.assertEquals("Page not Found", expectedText, ValidateAdNewAccountpage.getText());
+		
+	}
+
+	public void accountTitle(String accountTitle) {
+		AccountTitle.sendKeys(accountTitle);
+	}
+
+	public void enterdescription(String description) {
+		Description.sendKeys(description);
+	}
+
+	public void enterinitialBalance(String initialBalance) {
+		InitialBalance.sendKeys(initialBalance);
+	}
+
+	public void enteraccountNumber(String accountNumber) {
+		AccountNumber.sendKeys(accountNumber);
+	}
+
+	public void entercontactPerson(String contactPerson) {
+		ContactPerson.sendKeys(contactPerson);
+	}
+
+	public void enterphone(String phone) {
+		Phone.sendKeys(phone);
+
+	}
+
+	public void enterinternetBankingURL(String bankingURL) {
+		BankingURL.sendKeys(bankingURL);
+	}
+
+	public void user_should_clicksubmit() {
+		ClickonSubmit.click();
+
+	}
+
+	public void validateaccountcreated() {
+
+	}
+
+}

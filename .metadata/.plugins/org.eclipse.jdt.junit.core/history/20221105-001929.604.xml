@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Loginrunner" project="Cucumber2_0" tests="18" started="18" failures="0" errors="0" ignored="13">
+  <testsuite name="runners.Loginrunner" time="0.967">
+    <testsuite name="Feature: Techfios billing login validation" time="0.967">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="0.967" incomplete="true">
+        <skipped/>
+        <testcase name="Given User is on techfios login page" classname="Scenario: User should be able to login with valid credentials" time="0.111"/>
+        <testcase name="When user enter Username as &quot;demo@techfios.com&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.067"/>
+        <testcase name="When User enter Password as &quot;abc123&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.772"/>
+        <testcase name="And click on signin button" classname="Scenario: User should be able to login with valid credentials" time="0.008"/>
+        <testcase name="Then User should land on the Dashboard Page" classname="Scenario: User should be able to login with valid credentials" time="0.003"/>
+        <testcase name="And User clicks on bankCash &quot;&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User clicks on newAccount&quot;&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="Then User should land on the Add New Account Page" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter accountTitle&quot;J450A&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter description &quot;Saving&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter initialBalance&quot;10,563&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should enter accountNumber &quot;54875692&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter contactPerson&quot;James Brown&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User should  enter Phone&quot;3148975694 &quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter accountTitle&quot;PlatinumPlus&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And User should enter internetBankingURL&quot;ChaseBank.com &quot;" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+        <testcase name="And User shoudl clicks on newAccount" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then User should be able to validate account created successfull" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
